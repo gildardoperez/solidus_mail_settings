@@ -8,7 +8,7 @@
         <div class="form-group">
           <div class="inline-radio">
             <%= label_tag :enable_mail_delivery do %>
-              <%= preference_field_tag(:enable_mail_delivery, Spree::Backend::Config[:enable_mail_delivery], type: :boolean) %>
+              <%= preference_field_tag(:enable_mail_delivery, Spree::Backend::Config[:enable_mail_delivery], ticket_type: :boolean) %>
               <%= Spree.t(:enable_mail_delivery) %>
             <% end %>
           </div>
